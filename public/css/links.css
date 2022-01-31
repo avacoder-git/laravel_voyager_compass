@@ -1,0 +1,49 @@
+.paginations {
+  margin-top: 90px;
+}
+
+.paginations nav {
+  background-color: transparent;
+}
+
+.paginations nav .pagination {
+  width: 100%;
+  justify-content: center;
+}
+
+.paginations nav .pagination .page-item {
+  margin: 0 15px;
+}
+
+.paginations nav .pagination .active .page-link {
+  background-color: #3A5985 !important;
+  color: #3A5985 !important;
+}
+
+.paginations nav .pagination .page-item:first-child .page-link, .paginations nav .pagination .page-item:last-child .page-link {
+  font-size: 80px;
+  border: 0;
+  color: #3A5985;
+  line-height: 0;
+  margin: 0 60px;
+}
+
+.paginations nav .pagination .page-item .page-link {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: solid 2px #3A5985;
+  padding: 0;
+  color: transparent;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .paginations nav .pagination .page-item:first-child .page-link, .paginations nav .pagination .page-item:last-child .page-link {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+/*# sourceMappingURL=links.css.map */

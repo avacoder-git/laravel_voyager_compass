@@ -1,0 +1,36 @@
+@import "components";
+
+.second-color{
+    color: $thirdColor!important;
+}
+.content{
+    p{
+        color: $thirdColor;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 132.02%;
+        /* or 24px */
+
+        letter-spacing: 0.03em;
+        img{
+            border-radius: 24px;
+        }
+    }
+
+}
+@media only screen and (max-width: 600px) {
+    .content{
+        p{
+            img{
+                width: 100% !important;
+            }
+        }
+    }
+    .owl-stage-outer{
+        overflow: initial!important;
+    }
+
+
+}

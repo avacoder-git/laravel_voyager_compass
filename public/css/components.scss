@@ -1,0 +1,162 @@
+@import url('https://rsms.me/inter/inter.css');
+
+$yellow: #F7D664;
+$mainColor : #3A5985;
+$secondColor: #D5DEEF;
+$thirdColor: #758398;
+@mixin Menu(){
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: capitalize;
+}
+@mixin Menu2(){
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+@mixin mainResp(){
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+}
+@mixin main-text{
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+}
+@mixin main-header(){
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 58px;
+  line-height: 134%;
+  /* identical to box height, or 78px */
+
+  letter-spacing: 0.04em;
+
+  /* dark blue */
+
+  color: $mainColor;
+}
+@mixin main-body(){
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+
+  /* BODY */
+
+  color: #758398;
+
+}
+@mixin text(){
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+
+  /* BODY */
+
+  color: #758398;
+
+}
+
+
+
+@mixin mega-header(){
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 74px;
+  /* identical to box height */
+
+  letter-spacing: 0.04em;
+
+  /* dark blue */
+
+  color: $mainColor;
+}
+
+@mixin subject-name(){
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: $mainColor;
+  margin-top: 16px;
+}
+
+a:hover{
+  text-decoration: none;
+  color: white;
+}
+
+.main-text{
+  @include main-text();
+}
+
+.main-color{
+  color: $mainColor;
+}
+
+.color-yellow{
+  color: $yellow!important;
+}
+.second-color{
+  color: $secondColor;
+}
+.bg-second{
+  background-color: $secondColor;
+}
+.bg-main{
+  background-color: $mainColor;
+}
+.third-color{
+  color: $thirdColor;
+}
+.main-header{
+  @include main-header();
+}
+.main-body{
+  @include main-body();
+}
+.p{
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 138%;
+  /* or 25px */
+
+  letter-spacing: 0.04em;
+}
+.mega-header{
+    @include mega-header();
+}
+.text{
+  @include text();
+}
+.subject-name{
+  @include subject-name();
+  margin-bottom: 24px;
+}
+.bg-yellow{
+  background-color: $yellow;
+}

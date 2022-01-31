@@ -1,0 +1,765 @@
+@import "components";
+
+
+body {
+    background-color: #EFF4F4;
+}
+
+
+nav {
+    background-color: $mainColor;
+    padding: 0 70px !important;
+}
+
+.navbar-nav {
+    width: 100%;
+}
+
+.nav-item {
+    margin: auto;
+    @include Menu();
+}
+
+
+.mainBtn {
+    background: $yellow;
+    /* shwb */
+
+    box-shadow: 10px 11px 50px rgba(0, 0, 0, 0.12);
+    border-radius: 50rem;
+    padding: 16px 36px !important;
+    color: $mainColor !important;
+    @include main-text();
+    cursor: pointer;
+}
+
+.navbar-toggler {
+    z-index: 1000000000;
+}
+
+.contactBtnSm {
+    display: none;
+}
+
+
+.navbar-toggler span {
+    display: block;
+    background-color: #4f4f4f;
+    height: 3px;
+    width: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    left: 0;
+    opacity: 1;
+    transition: all 0.35s ease-out;
+    z-index: 100000000;
+}
+
+
+.header-text {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 78px;
+    letter-spacing: 0.045em;
+    color: white;
+}
+
+.header {
+    background-color: $mainColor;
+    padding-left: 100px;
+    padding-top: 54px;
+    padding-bottom: 144px;
+}
+
+
+.part-1 {
+    margin-top: 60px;
+}
+
+.part-3 {
+    display: none;
+}
+
+
+.sat {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 39px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #8C9097;
+
+    opacity: 0.7;
+}
+
+
+.about {
+    max-width: 1287px;
+
+    .content1-inner {
+        position: absolute;
+        width: 310px;
+        height: 300px;
+        bottom: 0;
+        right: 50px;
+
+        .counter {
+            box-shadow: 10px 24px 53px rgba(82, 72, 72, 0.06);
+            border-radius: 24px;
+            width: 150px;
+            height: 140px;
+            background-color: white;
+            margin-left: auto;
+            margin-bottom: 10px;
+
+        }
+    }
+}
+
+
+.subject-card {
+    box-shadow: 10px 11px 50px rgba(0, 0, 0, 0.12);
+    border-radius: 24px;
+    background-color: white;
+    padding: 20px;
+    margin-top: 40px;
+
+    .subject-content {
+        padding-left: 20px;
+
+        .subject-header {
+            @include main-text();
+            color: $mainColor;
+        }
+
+        .subject-info {
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            color: $mainColor;
+            margin-top: 15px;
+        }
+
+        .subject-body {
+            font-family: Inter;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+
+            color: #758398;
+            margin-top: 8px;
+        }
+
+        .subject-footer {
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            /* identical to box height */
+
+
+            /* dark blue */
+            margin-top: 18px;
+            color: $mainColor;
+        }
+    }
+
+    .subject-img {
+        border-radius: 14px;
+        width: 160px;
+        height: 160px;
+
+        img {
+            width: 100%;
+            border-radius: 14px;
+
+        }
+    }
+}
+
+
+.property {
+    background: #FFFFFF;
+    /* shwb */
+
+    box-shadow: 10px 11px 50px rgba(0, 0, 0, 0.12);
+    border-radius: 24px;
+    min-width: 240px !important;
+    max-width: 240px !important;
+    height: 240px;
+    margin: 20px;
+    padding: 0;
+
+    .main-text {
+        font-size: 22px;
+    }
+
+    .circle {
+        margin: 43px auto;
+        margin-bottom: 27px;
+        background-color: $yellow;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        position: relative;
+
+        img {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+.header-sm {
+    display: none;
+}
+
+.header-lg {
+    display: block;
+}
+
+
+.all-lg {
+    display: block;
+}
+
+.all-sm {
+    display: none;
+}
+
+.p-100 {
+    padding: 100px;
+}
+
+.student {
+    background: #FFFFFF;
+    box-shadow: 0px 11px 35px -10px rgba(0, 0, 0, 0.12);
+    border-radius: 24px;
+    width: 480px;
+    height: 300px;
+    padding: 40px;
+
+    .student-avatar {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: block;
+
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    .student-name {
+
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 44px;
+        color: $mainColor;
+    }
+
+    .student-subject {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        /* identical to box height */
+
+
+        /* BODY */
+
+        color: #758398;
+    }
+}
+
+
+.subject-1 {
+    background: #FFFFFF;
+    /* shwb */
+
+    box-shadow: 10px 11px 50px rgba(0, 0, 0, 0.12);
+    border-radius: 24px;
+    margin-top: 90px;
+    padding: 60px;
+
+    .var {
+        display: flex;
+        margin: 12px 0;
+
+        .var-text {
+            @include main-text();
+            color: #758398;
+            margin-left: 16px;
+
+        }
+    }
+}
+
+.mt-80 {
+    margin-top: 80px;
+}
+
+.about-inner-sm {
+    display: none;
+}
+
+
+.footer-link {
+    color: white;
+    margin: 12px 0;
+    display: block;
+    line-height: 22px;
+
+}
+
+.footer-header {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21.0467px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    margin-top: 90px;
+    margin-bottom: 22px;
+    color: white;
+}
+
+.footer-left {
+    margin-top: 32px;
+    padding-right: 50px
+}
+
+
+.news {
+    margin-top: 70px;
+    display: flex;
+
+    .new-img {
+        min-width: 360px;
+        max-width: 360px;
+        height: 360px;
+        border-radius: 40px;
+        overflow: hidden;
+
+
+        img {
+            height: 100%;
+        }
+    }
+
+    .news-body {
+        position: relative;
+        margin-left: 80px;
+
+        .news-header {
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 131.52%;
+            /* or 47px */
+
+            letter-spacing: 0.02em;
+
+            /* BODY */
+
+            color: #758398;
+        }
+
+        .news-text {
+            margin-top: 24px;
+            width: 50%;
+            color: #758398;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 131.52%;
+            /* or 24px */
+
+            letter-spacing: 0.02em;
+        }
+
+        .news-footer {
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
+}
+
+.result-year {
+    margin-top: 60px;
+
+    .dropdown-item {
+        transition: 0.4s;
+        padding: 10px 15px;
+    }
+
+    .dropdown-item:hover {
+        background-color: $yellow;
+        color: $mainColor !important;
+    }
+}
+
+
+
+.student-result {
+    margin-top: 45px;
+    margin-bottom: 45px;
+
+    .student-img {
+        height: 470px;
+        overflow: hidden;
+        border-radius: 16px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .student-tests {
+        display: inline-block;
+        transition: .5s;
+
+        .title-hover:hover {
+            opacity: 1;
+        }
+
+        .title-hover:hover > i {
+            font-size: 32px;
+        }
+
+        .title-hover {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border-radius: 8px;
+            opacity: 0;
+            transition: 0.4s;
+            transform: scale(1.2);
+
+            i {
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                font-size: 50px;
+                transition: 0.4s;
+
+            }
+        }
+    }
+
+    .result-info {
+        .student-name {
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 58px;
+            color: $mainColor;
+        }
+
+        .student-university {
+            @include subject-name();
+        }
+
+        .student-text {
+            color: $thirdColor;
+            margin-top: 40px;
+        }
+    }
+
+    .test-sheet {
+        position: relative;
+
+        height: 310px;
+        border-radius: 16px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+.info {
+    box-shadow: 10px 24px 53px rgba(82, 72, 72, 0.06);
+    border-radius: 24px;
+    height: 224px;
+    width: 240px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    /* shwb */
+
+
+    margin-left: auto;
+    margin-bottom: 10px;
+
+    .quantity {
+        @include subject-name();
+    }
+
+    .t-mini {
+        @include main-text();
+    }
+
+}
+
+.pt {
+    padding-top: 110px;
+}
+
+.aboutus {
+    img {
+        border-radius: 40px;
+        width: 100%;
+
+    }
+
+    .main-text {
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0.02em;
+    }
+}
+
+
+.keng-img {
+    width: 100%;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+    }
+}
+
+.course {
+    background-color: white;
+    box-shadow: 10px 11px 50px rgba(0, 0, 0, 0.12);
+    border-radius: 24px;
+    padding: 20px;
+
+    .course-img {
+        width: 100%;
+        height: 222px;
+        border-radius: 14px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .add {
+        border: 1px solid $mainColor;
+        box-sizing: border-box;
+        border-radius: 6px;
+        background-color: white;
+
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 22px;
+        color: $mainColor;
+        padding: 6px 12px;
+        margin-top: 20px;
+        margin-left: auto;
+        display: block;
+        transition: 0.3s;
+        outline: none;
+    }
+
+    .add:not(.added):hover {
+        background-color: $mainColor;
+        color: white;
+    }
+}
+
+.register {
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    z-index: 1000;
+    margin: 0;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.added {
+    border-color: #1abe00 !important;
+    color: #1abe00 !important;
+}
+
+.fan {
+    box-shadow: 10px 24px 53px rgba(82, 72, 72, 0.06);
+    border-radius: 50rem;
+    padding: 15px 20px;
+    @include main-text();
+    background-color: white;
+    color: $mainColor;
+    border: 0;
+
+    img {
+        margin: 0;
+        margin-left: 20px;
+    }
+
+    margin-right: 40px;
+}
+
+.add-fan {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+    /* identical to box height */
+
+    text-align: center;
+    text-decoration-line: underline;
+    color: $mainColor;
+    margin: auto 0;
+}
+
+.register-form {
+    label {
+        margin-top: 40px;
+    }
+
+    input, textarea {
+        width: 100%;
+        @include main-text();
+        padding: 16px 14px;
+        color: $mainColor;
+        border: 1.5px solid #758398;
+        border-radius: 4px;
+        outline: none;
+        background-color: transparent;
+        resize: none;
+    }
+
+    textarea::placeholder {
+        color: lightgray;
+    }
+
+    .mt-60 {
+        margin-top: 60px;
+    }
+}
+
+
+/**
+ * Animate collapse open into hamburger menu
+ */
+/* top line moves back to initial position and rotates back to 0 degrees */
+.navbar-toggler span:nth-child(1) {
+    //transform: translate(10px, 0%);
+    background-color: white;
+    width: 22px;
+    border-radius: 50rem;
+    //transform-origin: right center;
+    height: 2px;
+}
+
+/* middle line goes back to regular color and opacity */
+.navbar-toggler span:nth-child(2) {
+    background-color: white;
+    width: 22px;
+    border-radius: 50rem;
+    margin-top: 8px;
+    //transform-origin: center;
+    opacity: 1;
+    height: 2px;
+}
+
+/* bottom line goes back to initial position and rotates back to 0 degrees */
+.navbar-toggler span:nth-child(3) {
+    //transform: translate(6px, 0%);
+    margin-top: 8px;
+    background-color: white;
+    width: 22px;
+    border-radius: 50rem;
+    //transform-origin: center left;
+    height: 2px;
+}
+
+/* top line needs a little padding */
+.navbar-toggler span:nth-child(1) {
+    margin-top: 0.3rem;
+}
+
+/**
+ * Animate collapse into X.
+ */
+/* top line rotates 45 degrees clockwise and moves up and in a bit to close the center of the X in the center of the button */
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+    transform: translate(0, 10px) rotate(45deg);
+    width: 30px;
+}
+
+/* center line goes transparent */
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+    //transform: rotate(-45deg);
+    opacity: 0;
+}
+
+/* bottom line rotates 45 degrees counter clockwise, in, and down a bit to close the center of the X in the center of the button  */
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+    transform: translate(0, -10px) rotate(-45deg);
+    width: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

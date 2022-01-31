@@ -1,0 +1,493 @@
+@import url("https://rsms.me/inter/inter.css");
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.main-text {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.main-color {
+  color: #3A5985;
+}
+
+.color-yellow {
+  color: #F7D664 !important;
+}
+
+.second-color {
+  color: #D5DEEF;
+}
+
+.bg-second {
+  background-color: #D5DEEF;
+}
+
+.bg-main {
+  background-color: #3A5985;
+}
+
+.third-color {
+  color: #758398;
+}
+
+.main-header {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 58px;
+  line-height: 134%;
+  /* identical to box height, or 78px */
+  letter-spacing: 0.04em;
+  /* dark blue */
+  color: #3A5985;
+}
+
+.main-body {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+  /* BODY */
+  color: #758398;
+}
+
+.p {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 138%;
+  /* or 25px */
+  letter-spacing: 0.04em;
+}
+
+.mega-header {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 74px;
+  /* identical to box height */
+  letter-spacing: 0.04em;
+  /* dark blue */
+  color: #3A5985;
+}
+
+.text {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  /* BODY */
+  color: #758398;
+}
+
+.subject-name {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: #3A5985;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.bg-yellow {
+  background-color: #F7D664;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    padding: 0 !important;
+  }
+
+  .nav-item {
+    margin: 8px 15px;
+  }
+
+  .contactBtnLg {
+    display: none;
+  }
+
+  .header {
+    padding: 38px 15px;
+  }
+
+  .header-text {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 122.5%;
+    /* or 44px */
+    letter-spacing: 0.03em;
+  }
+
+  .mainBtn {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 7px 12px !important;
+  }
+
+  .part-1 {
+    margin: 0;
+  }
+
+  .part-2 {
+    display: none;
+  }
+
+  .part-3 {
+    display: block;
+  }
+
+  .sat {
+    font-size: 24px;
+  }
+
+  .main-header {
+    font-size: 24px !important;
+    line-height: 134% !important;
+    /* or 32px */
+    letter-spacing: 0.04em;
+  }
+
+  .content1-inner {
+    bottom: initial !important;
+    top: 0;
+    right: 10px !important;
+    display: block;
+  }
+  .content1-inner .counter {
+    width: 94px !important;
+    height: 90px !important;
+    border-radius: 14px !important;
+  }
+  .content1-inner .counter .main-text {
+    font-size: 18px !important;
+    line-height: 22px !important;
+  }
+  .content1-inner .counter .t-mini {
+    font-size: 12px !important;
+    line-height: 15px !important;
+  }
+
+  .subject-card {
+    border-radius: 14px;
+    padding: 6px !important;
+  }
+  .subject-card .d-flex {
+    display: block !important;
+  }
+  .subject-card .d-flex .subject-img {
+    width: 100%;
+    overflow: hidden;
+  }
+  .subject-card .d-flex .subject-content {
+    padding: 6px;
+  }
+  .subject-card .d-flex .subject-content .subject-body {
+    font-size: 10px !important;
+    line-height: 12px !important;
+    margin-top: 4px;
+  }
+  .subject-card .d-flex .subject-content .subject-info {
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: 6px;
+  }
+  .subject-card .d-flex .subject-content .subject-header {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .subject-card .d-flex .subject-content .subject-footer {
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 6px;
+  }
+
+  .all-sm {
+    display: block;
+  }
+
+  .all-lg {
+    display: none;
+  }
+
+  .about-inner-lg {
+    display: none;
+  }
+
+  .about-inner-sm {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .property {
+    min-width: 160px !important;
+    max-width: 160px !important;
+    border-radius: 14px;
+    height: 180px;
+    margin: 7px;
+  }
+  .property .circle {
+    margin-bottom: 14px;
+  }
+  .property .main-text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  footer .footer-link {
+    margin: 5px 0;
+  }
+  footer .footer-header {
+    margin-top: 30px;
+    margin-bottom: 5px;
+  }
+
+  .student {
+    width: 264px;
+    height: 300px;
+    border-radius: 14px;
+    padding: 40px 14px;
+  }
+  .student .student-avatar {
+    width: 50px;
+    height: 50px;
+  }
+  .student .student-name {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .student .student-subject {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .student .text {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .student .t-mini {
+    font-size: 18px !important;
+    line-height: 22px !important;
+  }
+
+  .header-sm {
+    display: block;
+  }
+
+  .header-lg {
+    display: none;
+  }
+
+  .mega-header {
+    font-size: 24px !important;
+    line-height: initial !important;
+    letter-spacing: 0.04em !important;
+    text-align: left !important;
+  }
+
+  .subject-1 {
+    margin-top: 24px;
+    padding: 30px 38px;
+  }
+  .subject-1 .subject-name {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+  }
+  .subject-1 .var .var-text {
+    font-size: 20px !important;
+    line-height: 24px !important;
+  }
+
+  .p-100 {
+    padding: 30px 15px;
+  }
+
+  .contactBtnSm {
+    background-color: #F7D664;
+    border-radius: 50rem;
+    color: #3A5985;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 7px 14px;
+    margin-right: 15px;
+    display: block;
+    cursor: pointer;
+  }
+
+  .news {
+    margin-top: 30px;
+  }
+  .news .new-img {
+    height: 160px;
+    min-width: 100%;
+    max-width: 100%;
+    border-radius: 14px;
+    margin-bottom: 24px;
+  }
+  .news .new-img img {
+    height: initial;
+    width: 100%;
+    transform: translateY(-50%);
+  }
+  .news .news-body {
+    margin-left: 0;
+  }
+  .news .news-body .news-header {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.03em;
+  }
+  .news .news-body .news-text {
+    display: none;
+  }
+  .news .news-body .news-footer {
+    position: initial;
+  }
+  .news .news-body .news-footer .batafsil {
+    display: none;
+  }
+  .news .news-body .news-footer div {
+    font-size: 12px;
+    line-height: 15px;
+    margin-left: auto;
+    margin-top: 10px;
+  }
+
+  .student-result .result-info .student-name {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 0;
+  }
+  .student-result .result-info .student-university {
+    font-size: 18px;
+    margin-top: 8px;
+    line-height: 22px;
+  }
+  .student-result .result-info .student-text {
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .student-result .student-img {
+    height: 220px;
+    border-radius: 8px;
+  }
+  .student-result .student-img img {
+    height: 100%;
+    width: initial;
+  }
+  .student-result .test-sheet {
+    height: 220px;
+    border-radius: 8px;
+  }
+  .student-result .test-sheet img {
+    height: 100%;
+    width: initial;
+  }
+
+  .mt-80 {
+    margin-top: 51px;
+  }
+
+  .pt {
+    padding-top: 40px;
+  }
+
+  .aboutus img {
+    border-radius: 14px;
+  }
+  .aboutus .main-text {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .fan {
+    margin-top: 20px;
+  }
+
+  .add-fan {
+    margin-top: 20px;
+    display: inline-block;
+  }
+
+  .course {
+    border-radius: 14px;
+    box-shadow: 10px 24px 53px rgba(82, 72, 72, 0.06);
+    padding: 6px;
+  }
+  .course .course-img {
+    border-radius: 8px;
+    height: 60px;
+  }
+  .course .main-text {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .course .add {
+    width: 100%;
+  }
+  .course .lg-view {
+    display: none;
+  }
+  .course .p {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: capitalize;
+  }
+
+  .owl-stage-outer {
+    overflow: initial !important;
+  }
+
+  .info {
+    width: 140px;
+    height: 140px;
+    margin-top: 20px;
+    padding: 8px;
+    border-radius: 14px;
+    margin-left: 10px;
+  }
+  .info .quantity {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .info .t-mini {
+    font-size: 14px !important;
+    line-height: 17px !important;
+  }
+}
+
+/*# sourceMappingURL=resp.css.map */

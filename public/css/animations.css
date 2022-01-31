@@ -1,0 +1,141 @@
+@import url("https://rsms.me/inter/inter.css");
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.main-text {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.main-color {
+  color: #3A5985;
+}
+
+.color-yellow {
+  color: #F7D664 !important;
+}
+
+.second-color {
+  color: #D5DEEF;
+}
+
+.bg-second {
+  background-color: #D5DEEF;
+}
+
+.bg-main {
+  background-color: #3A5985;
+}
+
+.third-color {
+  color: #758398;
+}
+
+.main-header {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 58px;
+  line-height: 134%;
+  /* identical to box height, or 78px */
+  letter-spacing: 0.04em;
+  /* dark blue */
+  color: #3A5985;
+}
+
+.main-body {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+  /* BODY */
+  color: #758398;
+}
+
+.p {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 138%;
+  /* or 25px */
+  letter-spacing: 0.04em;
+}
+
+.mega-header {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 74px;
+  /* identical to box height */
+  letter-spacing: 0.04em;
+  /* dark blue */
+  color: #3A5985;
+}
+
+.text {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  /* BODY */
+  color: #758398;
+}
+
+.subject-name {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: #3A5985;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.bg-yellow {
+  background-color: #F7D664;
+}
+
+.fill {
+  transition: 0.2s !important;
+  border: 2px solid #F7D664;
+}
+
+.fill:hover {
+  background-color: #3A5985;
+  border-color: #F7D664;
+  color: #F7D664 !important;
+  text-decoration: none;
+}
+
+.footer-link {
+  transition: 0.2s;
+}
+
+.footer-link:hover {
+  transform: translateX(10px);
+}
+
+.fill2 {
+  transition: 0.2s;
+  border: 2px solid #D5DEEF;
+}
+
+.fill2:hover {
+  background-color: #3A5985;
+  border-color: #D5DEEF;
+  color: #D5DEEF !important;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=animations.css.map */

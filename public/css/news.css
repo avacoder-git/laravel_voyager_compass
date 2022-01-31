@@ -1,0 +1,135 @@
+@import url("https://rsms.me/inter/inter.css");
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.main-text {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.main-color {
+  color: #3A5985;
+}
+
+.color-yellow {
+  color: #F7D664 !important;
+}
+
+.second-color {
+  color: #D5DEEF;
+}
+
+.bg-second {
+  background-color: #D5DEEF;
+}
+
+.bg-main {
+  background-color: #3A5985;
+}
+
+.third-color {
+  color: #758398;
+}
+
+.main-header {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 58px;
+  line-height: 134%;
+  /* identical to box height, or 78px */
+  letter-spacing: 0.04em;
+  /* dark blue */
+  color: #3A5985;
+}
+
+.main-body {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+  /* BODY */
+  color: #758398;
+}
+
+.p {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 138%;
+  /* or 25px */
+  letter-spacing: 0.04em;
+}
+
+.mega-header {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 74px;
+  /* identical to box height */
+  letter-spacing: 0.04em;
+  /* dark blue */
+  color: #3A5985;
+}
+
+.text {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  /* BODY */
+  color: #758398;
+}
+
+.subject-name {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: #3A5985;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.bg-yellow {
+  background-color: #F7D664;
+}
+
+.second-color {
+  color: #758398 !important;
+}
+
+.content p {
+  color: #758398;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 132.02%;
+  /* or 24px */
+  letter-spacing: 0.03em;
+}
+.content p img {
+  border-radius: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+  .content p img {
+    width: 100% !important;
+  }
+
+
+}
+
+/*# sourceMappingURL=news.css.map */

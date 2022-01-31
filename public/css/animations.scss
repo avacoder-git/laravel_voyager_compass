@@ -1,0 +1,40 @@
+@import "components";
+
+
+
+
+.fill{
+  transition: 0.2s!important;
+  border: 2px solid $yellow;
+}
+.fill:hover{
+  background-color: $mainColor;
+  border-color: $yellow;
+  color: $yellow!important;
+  text-decoration: none;
+
+}
+.footer-link{
+  transition: 0.2s;
+}
+.footer-link:hover{
+  transform: translateX(10px);
+}
+
+.fill2{
+  transition: 0.2s;
+  border: 2px solid $secondColor;
+}
+.fill2:hover{
+  background-color: $mainColor;
+  border-color: $secondColor;
+  color: $secondColor!important;
+  text-decoration: none;
+
+}
+
+
+
+
+
+
