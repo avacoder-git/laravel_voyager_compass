@@ -38,8 +38,8 @@
                     {{app()->getLocale()}}
                 </a>
                 <div class="dropdown-menu border-white shadow bg-main" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item bg-main text-white" href="{{changeLang('uz')}}">Uzb</a>
-                    <a class="dropdown-item bg-main text-white" href="{{changeLang('ru')}}">Rus</a>
+                    <a class="dropdown-item bg-main text-white" href="{{ url('locale/uz') }}">Uzb</a>
+                    <a class="dropdown-item bg-main text-white" href="{{ url('locale/ru') }}">Rus</a>
                 </div>
             </li>
             <li class="nav-item contactBtnLg"  data-aos-delay="350" data-aos="fade-right"

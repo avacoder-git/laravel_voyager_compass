@@ -17,18 +17,18 @@
         <div class="main-header" data-aos="fade-up">Yangiliklar</div>
 
         <div class="pt-80">
-            <div class="subject-name second-color">{{$news->title}}
+            <div class="subject-name second-color">{{$news->getTranslatedAttribute('title')}}
             </div>
         </div>
 
         <div class="content">
-            {!! $news->body !!}
+            {!! $news->getTranslatedAttribute('body') !!}
 
         </div>
 
 
         <div class="pt-80 ml-auto text-right main-text second-color">
-            {{changeDateFormate($news->created_at)}}
+            {{changeDateFormat($news->created_at)}}
         </div>
 
         <div class="container-fluid p-lg-0">
@@ -48,7 +48,7 @@
                                     <div class="news-footer">
                                         <div class="main-text batafsil third-color">Batafsil</div>
                                         <div class="p third-color">
-                                            {{changeDateFormate($new->created_at)}}
+                                            {{changeDateFormat($new->created_at)}}
                                         </div>
                                     </div>
                                 </div>

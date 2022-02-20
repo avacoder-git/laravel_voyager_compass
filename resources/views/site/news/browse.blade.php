@@ -14,15 +14,15 @@
                             <div class="news row">
                                 <div class="new-img col-lg-4 p-0"><img src="{{asset("storage/$new->thumbnail")}}" alt=""></div>
                                 <div class="news-body col-lg-8">
-                                    <div class="news-header">{{$new->title}}</div>
+                                    <div class="news-header">{{$new->getTranslatedAttribute('title')}}</div>
                                     <div class="news-text" >
-                                        {!! Str::limit($new->body, 200) !!}
+                                        {!! Str::limit($new->getTranslatedAttribute('body'), 200) !!}
                                     </div>
 
                                     <div class="news-footer">
                                         <div class="main-text batafsil third-color">@lang('site.more')</div>
                                         <div class="p third-color">
-                                            {{changeDateFormate($new->created_at)}}
+                                            {{changeDateFormat($new->created_at)}}
                                         </div>
                                     </div>
                                 </div>

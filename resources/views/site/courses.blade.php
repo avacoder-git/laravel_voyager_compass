@@ -15,7 +15,7 @@
                                 <img src="{{imagePath($course->thumbnail)}}" alt="">
                             </div>
                             <div class="main-text mt-4  px-2 main-color">
-                                {{$course->name}}
+                                {{$course->getTranslatedAttribute('name')}}
                             </div>
                             <div class="container-fluid lg-view main-color px-2 p-0">
                                 <div class="row mt-2">
@@ -39,7 +39,7 @@
                                 </div>
                             </div>
                             <div class="text mt-3 lg-view px-2">
-                                {{$course->description}}
+                                {{$course->getTranslatedAttribute('description')}}
                             </div>
                             <div class="p-2">
                                 <button class="add course-{{$course->id}}" data-id="{{$course->id}}">@lang('site.add') +</button>

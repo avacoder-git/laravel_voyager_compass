@@ -209,7 +209,7 @@
                                                                           height="100%" style="width: initial" alt="">
                             </div>
                             <div class="subject-content">
-                                <div class="subject-header">{{$item->name}}</div>
+                                <div class="subject-header">{{$item->getTranslatedAttribute('name')}}</div>
                                 <div
                                     class="subject-info">@lang('site.week') {{$item->weekly}} @lang('site.day') {{$item->hours}} @lang('site.hours') @lang('site.lesson')</div>
                                 <div class="subject-body">
@@ -323,8 +323,8 @@
                                         <img src="{{imagePath($item->image)}}" alt="">
                                     </div>
                                     <div style="margin-left: 20px">
-                                        <div class="student-name">{{$item->fullname}}</div>
-                                        <div class="main-text t-mini main-color">{{$item->universitet}}</div>
+                                        <div class="student-name">{{$item->getTranslatedAttribute('fullname')}}</div>
+                                        <div class="main-text t-mini main-color">{{$item->getTranslatedAttribute('universitet')}}</div>
                                     </div>
                                 </div>
 
@@ -335,7 +335,7 @@
                                     <div class="student-subject">DTM<b>{{$item->dtm}} ball</b></div>
                                 </div>
                                 <div class="text" style="margin-top: 25px">
-                                    {{$item->comment}}
+                                    {{$item->getTranslatedAttribute('comment')}}
                                 </div>
                             </div>
                         </div>
@@ -363,32 +363,32 @@
 
                 <div class="col-lg-4" data-aos="fade-up">
                     <div class="subject-1">
-                        <div class="main-text text-uppercase main-color text-center">{{$item->name}}</div>
+                        <div class="main-text text-uppercase main-color text-center">{{$item->getTranslatedAttribute('name')}}</div>
                         <div class="subject-name">{{$item->sum}} SUM <span style="opacity: 0.7; font-size: 26px">/oy</span>
                         </div>
                         @if($item->property1)
                         <div class="var"><img src="{{asset("image/check-circle.svg")}}" alt="">
-                            <div class="var-text">{{$item->property1}}</div>
+                            <div class="var-text">{{$item->getTranslatedAttribute('property1')}}</div>
                         </div>
                         @endif
                         @if($item->property2)
                             <div class="var"><img src="{{asset("image/check-circle.svg")}}" alt="">
-                                <div class="var-text">{{$item->property2}}</div>
+                                <div class="var-text">{{$item->getTranslatedAttribute('property2')}}</div>
                             </div>
                         @endif
                         @if($item->property3)
                             <div class="var"><img src="{{asset("image/check-circle.svg")}}" alt="">
-                                <div class="var-text">{{$item->property3}}</div>
+                                <div class="var-text">{{$item->getTranslatedAttribute('property3')}}</div>
                             </div>
                         @endif
                         @if($item->property4)
                             <div class="var"><img src="{{asset("image/check-circle.svg")}}" alt="">
-                                <div class="var-text">{{$item->property4}}</div>
+                                <div class="var-text">{{$item->getTranslatedAttribute('property4')}}</div>
                             </div>
                         @endif
                         @if($item->property5)
                             <div class="var"><img src="{{asset("image/check-circle.svg")}}" alt="">
-                                <div class="var-text">{{$item->property5}}</div>
+                                <div class="var-text">{{$item->getTranslatedAttribute('property5')}}</div>
                             </div>
                         @endif
 

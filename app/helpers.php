@@ -1,9 +1,18 @@
 <?php
 
+use Carbon\Carbon;
 use Illuminate\Support\Facades\Route;
 
-function changeDateFormate($date){
-   return Carbon\Carbon::createFromFormat('Y-m-d H:i:s', $date)->format('H:i, Y.m.d');
+function changeDateFormat($date){
+   Carbon::setLocale(getLocale(app()->getLocale()));
+   $date = Carbon::parse($date);
+
+
+   return $date->translatedFormat('F  d, Y');
+}
+
+function getLocale($lang){
+    return $lang == 'uz'?'uz_Latn':'ru_RU';
 }
 
 function imagePath($image_name)
@@ -18,10 +27,8 @@ function set_active($path) {
 }
 
 function changeLang($lang){
-    $arr = Route::getFacadeRoot()->current()->uri();
-
-    return  env("APP_URL")."/".$lang.substr($arr,2);
-
+    Session::put('locale', $lang);
+    return redirect()->back();
 }
 function del_element_from_array($element, $array){
     $newArr = [];

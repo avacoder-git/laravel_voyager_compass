@@ -19,7 +19,7 @@ $('.student-tests').owlCarousel({
     loop:true,
     margin:40,
     autoplay:true,
-    autoplayTimeout:2000,
+    autoplayTimeout:10000,
     responsive:{
         0:{
             items:1

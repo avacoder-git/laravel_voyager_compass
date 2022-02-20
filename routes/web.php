@@ -16,30 +16,23 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 */
 
 
-Route::group( ['prefix' => LaravelLocalization::setLocale(),
-    'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath']
-    ], function () {
+Route::get('/', function () {
 
+    return view('site.index');
+});
 
-        Route::get('/', function () {
-
-            return view('site.index');
-        });
-
-        Route::get("/news", [SiteController::class, 'newsBrowse'])->name("news.browse");
-        Route::get("/news/{news}", [SiteController::class, 'newsIndex'])->name("news.index");
-        Route::get("/courses", [SiteController::class, 'courses'])->name("courses.browse");
-        Route::get("/register", [SiteController::class, 'register'])->name("register");
-        Route::post("/register", [SiteController::class, 'registerStore'])->name("register.post");
-        Route::get("/success", function (){
-            return view('site.success');
-        })->name("register.success");
-        Route::get("/results", [SiteController::class, 'results'])->name("results.browse");
-        Route::get("/about", function (){
-            return view('site.about');
-        })->name("about");
-
-    });
+Route::get("/news", [SiteController::class, 'newsBrowse'])->name("news.browse");
+Route::get("/news/{news}", [SiteController::class, 'newsIndex'])->name("news.index");
+Route::get("/courses", [SiteController::class, 'courses'])->name("courses.browse");
+Route::get("/register", [SiteController::class, 'register'])->name("register");
+Route::post("/register", [SiteController::class, 'registerStore'])->name("register.post");
+Route::get("/success", function () {
+    return view('site.success');
+})->name("register.success");
+Route::get("/results", [SiteController::class, 'results'])->name("results.browse");
+Route::get("/about", function () {
+    return view('site.about');
+})->name("about");
 
 
 Route::group(['prefix' => 'admin'], function () {
@@ -47,3 +40,7 @@ Route::group(['prefix' => 'admin'], function () {
 });
 
 
+Route::get('locale/{locale}', function ($locale) {
+    Session::put('locale', $locale);
+    return redirect()->back();
+});

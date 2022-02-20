@@ -31,7 +31,7 @@
                                     <div class="col-lg-3 col-6">
                                         <div class="student-img"><img src="{{imagePath($student->image)}}" alt=""></div>
                                     </div>
-                                    <div class="col-lg-4 col-6">
+                                    <div class="col-lg-4 col-6 overflow-hidden">
                                         <div class="owl-carousel student-tests owl-theme">
                                             @foreach(json_decode($student->results) as $test)
                                                 <div class="item">
