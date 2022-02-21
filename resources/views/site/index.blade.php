@@ -364,7 +364,7 @@
                 <div class="col-lg-4" data-aos="fade-up">
                     <div class="subject-1">
                         <div class="main-text text-uppercase main-color text-center">{{$item->getTranslatedAttribute('name')}}</div>
-                        <div class="subject-name">{{$item->sum}} SUM <span style="opacity: 0.7; font-size: 26px">/oy</span>
+                        <div class="subject-name">{{$item->price}} SUM <span style="opacity: 0.7; font-size: 26px">/oy</span>
                         </div>
                         @if($item->property1)
                         <div class="var"><img src="{{asset("image/check-circle.svg")}}" alt="">

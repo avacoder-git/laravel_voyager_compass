@@ -27,11 +27,12 @@
                     <div class="col-12" data-aos="fade-up">
                         <div class="student-result">
                             <div class="container-fluid">
-                                <div class="row justify-content-between">
+                                <div class="row">
                                     <div class="col-lg-3 col-6">
-                                        <div class="student-img"><img src="{{imagePath($student->image)}}" alt=""></div>
+                                        <div class="student-img"><img src="{{$student->image?imagePath($student->image):asset('image/student-thumb.jpg')}}" alt=""></div>
                                     </div>
-                                    <div class="col-lg-4 col-6 overflow-hidden">
+                                    @if($student->results)
+                                        <div class="col-lg-4 col-6 overflow-hidden">
                                         <div class="owl-carousel student-tests owl-theme">
                                             @foreach(json_decode($student->results) as $test)
                                                 <div class="item">
@@ -47,15 +48,16 @@
                                             @endforeach
                                         </div>
                                     </div>
+                                    @endif
                                     <div class="col-lg-5 ">
 
                                         <div class="result-info">
-                                            <div class="student-name">{{$student->fullname}}</div>
+                                            <div class="student-name">{{$student->getTranslatedAttribute('fullname')}}</div>
                                             <div class="student-university">
-                                                {{$student->universitet}}
+                                                {{$student->getTranslatedAttribute('universitet')}}
                                             </div>
                                             <div class="student-text p">
-                                                {{$student->comment}}
+                                                {{$student->getTranslatedAttribute('comment')}}
                                             </div>
                                         </div>
 
