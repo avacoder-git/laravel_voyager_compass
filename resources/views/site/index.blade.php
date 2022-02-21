@@ -85,8 +85,6 @@
                 <div class="sat">DTM</div>
             </div>
         </div>
-
-
     </div>
 
 
@@ -238,65 +236,68 @@
 
     <section class="bg-main">
         <div class="p-100">
-            <div class="row justify-content-center">
-                <div class="col-lg-6 col-md-6 col-12">
-                    <div class="main-header text-white header-sm header-anim"
-                         data-aos="fade-up">@lang('site.join')</div>
+            <div class="container-fluid p-sm-0">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="main-header text-white header-sm header-anim"
+                             data-aos="fade-up">@lang('site.join')</div>
 
-                    <div>
-                        <div
-                            style="display: flex; flex-wrap: wrap; flex-direction: row; margin-left: -15px; margin-right: -15px; padding: 0 10px">
+                        <div>
+                            <div
+                                style="display: flex; flex-wrap: wrap; flex-direction: row; margin-left: -15px; margin-right: -15px; padding: 0">
 
-                            <div class="property col">
-                                <div class="circle">
-                                    <img src="{{asset("image/rocket.svg")}}" alt="">
+                                <div class="property col">
+                                    <div class="circle">
+                                        <img src="{{asset("image/rocket.svg")}}" alt="">
+                                    </div>
+                                    <div class="main-text text-center main-color">
+                                        @lang('site.beforeigner')
+                                    </div>
                                 </div>
-                                <div class="main-text text-center main-color">
-                                    @lang('site.beforeigner')
+                                <div class="property col">
+                                    <div class="circle">
+                                        <img src="{{asset("image/portfolio.svg")}}" alt="">
+                                    </div>
+                                    <div class="main-text text-center main-color">
+                                        @lang("site.portfolio")
+                                    </div>
                                 </div>
                             </div>
-                            <div class="property col">
-                                <div class="circle">
-                                    <img src="{{asset("image/portfolio.svg")}}" alt="">
-                                </div>
-                                <div class="main-text text-center main-color">
-                                    @lang("site.portfolio")
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            style="display: flex; flex-wrap: wrap; flex-direction: row; margin-left: -15px; margin-right: -15px; padding: 0 10px">
+                            <div
+                                style="display: flex; flex-wrap: wrap; flex-direction: row; margin-left: -15px; margin-right: -15px; padding: 0">
 
-                            <div class="property col">
-                                <div class="circle">
-                                    <img src="{{asset("image/clock-fill.svg")}}" alt="">
+                                <div class="property col">
+                                    <div class="circle">
+                                        <img src="{{asset("image/clock-fill.svg")}}" alt="">
+                                    </div>
+                                    <div class="main-text text-center main-color">
+                                        @lang('site.want')
+                                    </div>
                                 </div>
-                                <div class="main-text text-center main-color">
-                                    @lang('site.want')
-                                </div>
-                            </div>
-                            <div class="property col">
-                                <div class="circle">
-                                    <img src="{{asset("image/quest.svg")}}" alt="">
-                                </div>
-                                <div class="main-text text-center main-color">
-                                    @lang('site.select_university')
+                                <div class="property col">
+                                    <div class="circle">
+                                        <img src="{{asset("image/quest.svg")}}" alt="">
+                                    </div>
+                                    <div class="main-text text-center main-color">
+                                        @lang('site.select_university')
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-5">
-                    <div class="main-header text-white header-lg header-anim"
-                         data-aos="fade-up">@lang('site.join')</div>
-                    <p class="p second-color mt-5 " data-aos-delay="200" data-aos="zoom-out">
-                        @lang('site.mehmon')
-                    </p>
+                    <div class="col-lg-5">
+                        <div class="main-header text-white header-lg header-anim"
+                             data-aos="fade-up">@lang('site.join')</div>
+                        <p class="p second-color mt-5 " data-aos-delay="200" data-aos="zoom-out">
+                            @lang('site.mehmon')
+                        </p>
 
-                    <div class="mt-5">
-                        <a href="{{route('courses.browse')}}" class="mainBtn fill">@lang('site.write_course')</a>
+                        <div class="mt-5">
+                            <a href="{{route('courses.browse')}}" class="mainBtn fill">@lang('site.write_course')</a>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -304,6 +305,11 @@
 
     <div class="p-100 mt-5" style="padding-right: 15px">
 
+
+
+    </div>
+
+    <div class="container-fluid">
         <div class="row">
             <div class="col-lg-5">
                 <div class="main-header header-anim" data-aos="fade-up">@lang('site.student_result')</div>
@@ -311,16 +317,16 @@
                     @lang('site.after')
                 </div>
             </div>
-            <div class="col-lg-7 mt-4">
+            <div class="col-lg-7 mt-4 overflow-hidden">
                 <div class="owl-carousel student-home  owl-theme">
 
                     @foreach(\App\Models\Student::latest()->take(6)->get()  as $item)
 
-                        <div class="item p-lg-5">
+                        <div class="item overflow-hidden p-lg-5">
                             <div class="student" data-aos="fade-up">
                                 <div class="d-flex">
                                     <div class="student-avatar">
-                                        <img src="{{imagePath($item->image)}}" alt="">
+                                        <img src="{{$item->image?imagePath($item->image):"image/student-thumb.jpg"}}" alt="">
                                     </div>
                                     <div style="margin-left: 20px">
                                         <div class="student-name">{{$item->getTranslatedAttribute('fullname')}}</div>
@@ -334,9 +340,7 @@
                                             /30</b></div>
                                     <div class="student-subject">DTM<b>{{$item->dtm}} ball</b></div>
                                 </div>
-                                <div class="text" style="margin-top: 25px">
-                                    {{$item->getTranslatedAttribute('comment')}}
-                                </div>
+
                             </div>
                         </div>
 
@@ -349,14 +353,18 @@
             </div>
         </div>
 
-
     </div>
-
 
     <div class="p-100" style="padding-top: 0">
 
         <div class="mega-header text-center" data-aos="fade-up">@lang('site.ready')</div>
 
+
+
+    </div>
+
+
+    <div class="container-fluid">
         <div class="row">
 
             @foreach(\App\Models\Subject::latest()->take(3)->get() as $item)
@@ -367,9 +375,9 @@
                         <div class="subject-name">{{$item->price}} SUM <span style="opacity: 0.7; font-size: 26px">/oy</span>
                         </div>
                         @if($item->property1)
-                        <div class="var"><img src="{{asset("image/check-circle.svg")}}" alt="">
-                            <div class="var-text">{{$item->getTranslatedAttribute('property1')}}</div>
-                        </div>
+                            <div class="var"><img src="{{asset("image/check-circle.svg")}}" alt="">
+                                <div class="var-text">{{$item->getTranslatedAttribute('property1')}}</div>
+                            </div>
                         @endif
                         @if($item->property2)
                             <div class="var"><img src="{{asset("image/check-circle.svg")}}" alt="">
