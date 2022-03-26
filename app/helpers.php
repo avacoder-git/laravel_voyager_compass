@@ -42,4 +42,9 @@ function del_element_from_array($element, $array){
 
 return json_encode($newArr);
 
+
+
 }
+
+
+echo "12312";
