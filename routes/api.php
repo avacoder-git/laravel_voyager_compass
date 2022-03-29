@@ -18,7 +18,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::put('/get', function (Request $request){
+Route::post('/get', function (Request $request){
     return $request->all();
 });
 
