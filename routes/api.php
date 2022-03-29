@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use TCG\Voyager\Models\Post;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +20,14 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::post('/get', function (Request $request){
-    return $request->all();
+
+    $post = Post::create([
+        'author_id'=> 0,
+        'title' => 'w',
+        'body' => $request->htmlCode??'32',
+        'slug' => '2'
+    ]);
+    return $post;
+
 });
 
