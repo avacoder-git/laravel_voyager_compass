@@ -45,6 +45,3 @@ return json_encode($newArr);
 
 
 }
-
-
-echo "12312";
